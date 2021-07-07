@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 하나라도 값이 없다면 무조건 false
+        // 맨 마지막값을 리턴한 값이 나온다?
+        console.log(`'Cat' && 'Dog' => ${'Cat' && 'Dog'}`); //Dog
+        console.log(`'Cat' && 'false' => ${'Cat' && false}`); //Dog
+        console.log(`'false' && 'Dog' => ${false && 'Dog'}`); //Dog
+
+        console.log(`'' && false => ${'' && false}`); // ''
+        console.log(`'abc' && false => ${'abc' && false}`); // false
+        console.log(`'' && false => ${'' && true}`); // ''
+        console.log(`'abc' && false => ${'abc' && true}`); // true
+    </script>
+</body>
+</html>
